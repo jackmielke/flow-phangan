@@ -5,55 +5,51 @@ interface CodeGenerationLoaderProps {
 }
 
 const CodeGenerationLoader = ({ onComplete }: CodeGenerationLoaderProps) => {
-  const [columns, setColumns] = useState<string[]>([]);
-  const matrixCharacters = "0123456789";
-  
+  const [lines, setLines] = useState<string[]>([]);
+  const codeLines = [
+    "Initializing AI components...",
+    "Generating React components...",
+    "Applying Tailwind styles...",
+    "Building your personal space..."
+  ];
+
   useEffect(() => {
-    // Create initial columns with more density
-    const numColumns = Math.floor(window.innerWidth / 15); // More columns for denser effect
-    const initialColumns = Array(numColumns).fill('').map(() => 
-      Array(Math.floor(Math.random() * 30) + 10) // Longer initial strings
-        .fill(0)
-        .map(() => matrixCharacters[Math.floor(Math.random() * matrixCharacters.length)])
-        .join('')
-    );
-    setColumns(initialColumns);
-
-    // Update columns periodically with smoother transitions
+    let currentLine = 0;
     const interval = setInterval(() => {
-      setColumns(prev => prev.map(column => {
-        if (column.length > 50) return column.slice(1); // Keep maximum length
-        return Math.random() > 0.3 ? // More frequent updates
-          column + matrixCharacters[Math.floor(Math.random() * matrixCharacters.length)] :
-          column.slice(1);
-      }));
-    }, 30); // Faster updates for smoother animation
+      if (currentLine < codeLines.length) {
+        setLines(prev => [...prev, codeLines[currentLine]]);
+        currentLine++;
+      } else {
+        clearInterval(interval);
+        setTimeout(onComplete, 500);
+      }
+    }, 400);
 
-    // Complete after 2 seconds
-    const timeout = setTimeout(onComplete, 2000);
-
-    return () => {
-      clearInterval(interval);
-      clearTimeout(timeout);
-    };
+    return () => clearInterval(interval);
   }, [onComplete]);
 
   return (
-    <div className="min-h-screen bg-black overflow-hidden">
-      <div className="absolute inset-0 flex justify-around">
-        {columns.map((column, i) => (
-          <div
-            key={i}
-            className="text-primary/80 font-mono text-sm whitespace-pre animate-matrixRain"
-            style={{
-              animationDelay: `${Math.random() * 1.5}s`, // Shorter delay range
-              animationDuration: `${1.5 + Math.random()}s`, // More consistent duration
-              opacity: 0.8 + Math.random() * 0.2 // Slightly random opacity
-            }}
-          >
-            {column}
+    <div className="min-h-screen flex items-center justify-center bg-background p-4">
+      <div className="relative max-w-2xl w-full">
+        <div className="bg-card p-6 rounded-lg shadow-lg border border-border">
+          <div className="flex items-center space-x-2 mb-4">
+            <div className="w-3 h-3 rounded-full bg-red-500" />
+            <div className="w-3 h-3 rounded-full bg-yellow-500" />
+            <div className="w-3 h-3 rounded-full bg-green-500" />
           </div>
-        ))}
+          <div className="font-mono text-sm space-y-2">
+            {lines.map((line, index) => (
+              <div
+                key={index}
+                className="flex items-center space-x-2 animate-fadeIn"
+                style={{ animationDelay: `${index * 400}ms` }}
+              >
+                <span className="text-primary">{">"}</span>
+                <span className="text-foreground">{line}</span>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   );
