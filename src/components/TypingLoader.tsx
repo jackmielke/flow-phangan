@@ -13,12 +13,12 @@ const TypingLoader = ({ onComplete }: TypingLoaderProps) => {
     let currentIndex = 0;
     const typingInterval = setInterval(() => {
       if (currentIndex < fullText.length) {
-        setText((prev) => prev + fullText[currentIndex]);
+        setText(fullText.slice(0, currentIndex + 1));
         currentIndex++;
       } else {
         clearInterval(typingInterval);
         setIsComplete(true);
-        setTimeout(onComplete, 1000); // Wait a second before transitioning
+        setTimeout(onComplete, 1000);
       }
     }, 100);
 
