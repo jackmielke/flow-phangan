@@ -6,7 +6,7 @@ interface TypingLoaderProps {
 
 const TypingLoader = ({ onComplete }: TypingLoaderProps) => {
   const [text, setText] = useState("");
-  const fullText = "Create a fun personal site for me";
+  const fullText = "Create a fun website for Flow Phangan";
   const [isComplete, setIsComplete] = useState(false);
 
   useEffect(() => {
