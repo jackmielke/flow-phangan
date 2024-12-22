@@ -1,5 +1,5 @@
 import React from "react";
-import { PalmTree, ThumbsUp, Smile, Monkey, MoneyBag } from "lucide-react";
+import { Palmtree, ThumbsUp, Smile, Users, Coins } from "lucide-react";
 
 const MainContent = () => {
   return (
@@ -41,7 +41,7 @@ const MainContent = () => {
 
             <div className="space-y-4">
               <div className="flex items-center space-x-2">
-                <PalmTree className="h-6 w-6" />
+                <Palmtree className="h-6 w-6" />
                 <p className="text-lg">Paradise island vibes: beaches, sunsets, and jungles</p>
               </div>
 
@@ -56,12 +56,12 @@ const MainContent = () => {
               </div>
 
               <div className="flex items-center space-x-2">
-                <Monkey className="h-6 w-6" />
+                <Users className="h-6 w-6" />
                 <p className="text-lg">Monkeys, scooters, and incredible coastline exploring</p>
               </div>
 
               <div className="flex items-center space-x-2">
-                <MoneyBag className="h-6 w-6" />
+                <Coins className="h-6 w-6" />
                 <p className="text-lg">Accommodation for all budgets: from $300/mo bungalows to $10k/mo luxury villas</p>
               </div>
             </div>
