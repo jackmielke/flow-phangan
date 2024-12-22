@@ -7,10 +7,10 @@ interface CodeGenerationLoaderProps {
 const CodeGenerationLoader = ({ onComplete }: CodeGenerationLoaderProps) => {
   const [lines, setLines] = useState<string[]>([]);
   const codeLines = [
-    "Initializing AI components...",
-    "Generating React components...",
-    "Applying Tailwind styles...",
-    "Building your personal space..."
+    "Creating coworking paradise in Koh Phangan...",
+    "Adding beachside workspace features...",
+    "Integrating island vibes and sunsets...",
+    "Finalizing Flow Phangan experience..."
   ];
 
   useEffect(() => {
