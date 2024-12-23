@@ -20,7 +20,7 @@ const MainContent = () => {
             className="bg-white text-black hover:bg-white/90 animate-fadeIn"
             onClick={() => window.open('https://flowphangan.com/apply', '_blank')}
           >
-            Express Interest
+            I'm interested
           </Button>
         </div>
       </section>
@@ -167,7 +167,7 @@ const MainContent = () => {
               className="bg-primary hover:bg-primary/90"
               onClick={() => window.open('https://flowphangan.com/apply', '_blank')}
             >
-              Express Interest
+              I'm interested
             </Button>
             <div className="text-sm text-muted-foreground">
               Questions? Email us at{" "}
