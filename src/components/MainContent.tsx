@@ -18,7 +18,7 @@ const MainContent = () => {
           <Button 
             size="lg"
             className="bg-white text-black hover:bg-white/90 animate-fadeIn"
-            onClick={() => window.open('https://airtable.com/appt8cQp1EPGsmmZy/pagDgPJfHw9UqHwAw/form', '_blank')}
+            onClick={() => window.open('https://flowphangan.com/apply', '_blank')}
           >
             Express Interest
           </Button>
@@ -165,17 +165,17 @@ const MainContent = () => {
             <Button
               size="lg"
               className="bg-primary hover:bg-primary/90"
-              onClick={() => window.open('https://airtable.com/appt8cQp1EPGsmmZy/pagDgPJfHw9UqHwAw/form', '_blank')}
+              onClick={() => window.open('https://flowphangan.com/apply', '_blank')}
             >
               Express Interest
             </Button>
             <div className="text-sm text-muted-foreground">
               Questions? Email us at{" "}
               <a 
-                href="mailto:info@flowphangan.com"
+                href="mailto:hello@flowphangan.com"
                 className="text-primary hover:underline"
               >
-                info@flowphangan.com
+                hello@flowphangan.com
               </a>
             </div>
           </div>
