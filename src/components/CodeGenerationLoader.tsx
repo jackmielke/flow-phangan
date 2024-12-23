@@ -8,9 +8,11 @@ const CodeGenerationLoader = ({ onComplete }: CodeGenerationLoaderProps) => {
   const [lines, setLines] = useState<string[]>([]);
   const codeLines = [
     "Generating your paradise on Koh Phangan...",
-    "Adding beachside workspace features...",
-    "Integrating island vibes and sunsets...",
-    "Finalizing Flow Phangan experience..."
+    "Initializing React + TypeScript components for beachside bliss...",
+    "Configuring Tailwind CSS for that tropical aesthetic...",
+    "Teaching the AI about Thai coconuts and code quality...",
+    "Optimizing components while dreaming of pad thai...",
+    "Finalizing Flow Phangan deployment with extra sunshine ☀️"
   ];
 
   useEffect(() => {
