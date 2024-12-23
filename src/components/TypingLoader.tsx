@@ -26,7 +26,7 @@ const TypingLoader = ({ onComplete }: TypingLoaderProps) => {
   }, [onComplete]);
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background p-4">
+    <div className="min-h-screen flex items-start pt-[40vh] justify-center bg-background p-4">
       <div className="relative max-w-2xl w-full">
         <div className="bg-card p-6 rounded-lg shadow-lg border border-border">
           <div className="flex items-center space-x-2 mb-4">
