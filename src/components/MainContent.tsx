@@ -169,15 +169,6 @@ const MainContent = () => {
             >
               I'm interested
             </Button>
-            <div className="text-sm text-muted-foreground">
-              Questions? Email us at{" "}
-              <a 
-                href="mailto:hello@flowphangan.com"
-                className="text-primary hover:underline"
-              >
-                hello@flowphangan.com
-              </a>
-            </div>
           </div>
         </section>
       </main>
