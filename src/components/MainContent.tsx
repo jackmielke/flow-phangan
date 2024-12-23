@@ -1,5 +1,5 @@
 import React from "react";
-import { Palmtree, Users, Coins, Smile, Beach, Sun, Wifi } from "lucide-react";
+import { Palmtree, Users, Coins, Smile, Waves, Sun, Wifi } from "lucide-react";
 import { Button } from "./ui/button";
 
 const MainContent = () => {
@@ -68,7 +68,7 @@ const MainContent = () => {
                   text: "Healthy lifestyle: Muay Thai gyms (and regular ones), ecstatic dance, amazing food, and a thriving yoga & conscious community",
                 },
                 {
-                  icon: <Beach className="w-6 h-6" />,
+                  icon: <Waves className="w-6 h-6" />,
                   text: "Monkeys, scooters, and incredible coastline exploring",
                 },
                 {
