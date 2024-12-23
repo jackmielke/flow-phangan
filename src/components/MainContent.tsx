@@ -1,5 +1,5 @@
 import React from "react";
-import { Palmtree, Users, Coins, Smile, Waves, Sun, Wifi } from "lucide-react";
+import { Palmtree, Users, Coins, Smile, Waves, Sun, Wifi, PalmTree } from "lucide-react";
 import { Button } from "./ui/button";
 
 const MainContent = () => {
@@ -18,7 +18,7 @@ const MainContent = () => {
           <Button 
             size="lg"
             className="bg-white text-black hover:bg-white/90 animate-fadeIn"
-            onClick={() => window.open('https://flowphangan.com/apply', '_blank')}
+            onClick={() => window.open('https://airtable.com/appt8cQp1EPGsmmZy/pagDgPJfHw9UqHwAw/form', '_blank')}
           >
             I'm Interested
           </Button>
@@ -183,7 +183,7 @@ const MainContent = () => {
             <Button
               size="lg"
               className="bg-primary hover:bg-primary/90"
-              onClick={() => window.open('https://flowphangan.com/apply', '_blank')}
+              onClick={() => window.open('https://airtable.com/appt8cQp1EPGsmmZy/pagDgPJfHw9UqHwAw/form', '_blank')}
             >
               I'm Interested
             </Button>
