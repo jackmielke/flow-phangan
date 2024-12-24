@@ -18,7 +18,7 @@ const HeroSection = () => {
           </p>
         </div>
         <h1 className="text-5xl font-bold mb-6 animate-fadeIn">Flow Phangan</h1>
-        <p className="text-xl mb-8 animate-fadeIn opacity-90">Join our community of engineers and digital nomads for one month on the beautiful island of Koh Phangan</p>
+        <p className="text-xl mb-8 animate-fadeIn opacity-90">Join our community of engineers and digital nomads for 1 month on the beautiful island of Koh Phangan</p>
         <Button 
           size="lg"
           className="bg-white text-black hover:bg-white/90 animate-fadeIn"
