@@ -7,7 +7,7 @@ interface CodeGenerationLoaderProps {
 const CodeGenerationLoader = ({ onComplete }: CodeGenerationLoaderProps) => {
   const [lines, setLines] = useState<string[]>([]);
   const codeLines = [
-    "Generating your paradise on Koh Phangan...",
+    "AI generating your paradise on Koh Phangan...",
     "Initializing React + TypeScript components for beachside bliss...",
     "Configuring Tailwind CSS for that tropical aesthetic...",
     "Teaching the AI about Thai coconuts and code quality...",
