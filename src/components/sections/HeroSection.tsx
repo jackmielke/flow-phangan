@@ -4,7 +4,7 @@ import { Button } from "../ui/button";
 const HeroSection = () => {
   return (
     <section className="relative h-[90vh] flex items-center justify-center" style={{
-      backgroundImage: "url('/lovable-uploads/2c61c20c-8141-453b-bb22-f4c07f4ef997.png')",
+      backgroundImage: "url('/lovable-uploads/11d1a4b7-9054-421b-b8dc-d2c787dc34ab.png')",
       backgroundSize: 'cover',
       backgroundPosition: 'center'
     }}>
