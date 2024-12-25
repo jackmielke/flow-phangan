@@ -7,19 +7,19 @@ const VisionSection = () => {
         <div className="space-y-6">
           <h2 className="text-3xl font-bold">The Vision</h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            We've secured a stunning villa on{" "}
+            We've booked a villa and are turning it into a month-long creative hub for technical and remote workers on{" "}
             <a 
-              href="https://www.google.com/maps/place/Ko+Pha+Ngan" 
+              href="https://www.google.com/maps/place/Ko+Pha+Ngan/@9.7349598,99.9388031,35068m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3054fd96fa0377ef:0xd3fd8d1a5e79affe!8m2!3d9.7318753!4d100.0135929!16zL20vMDNtajBu?hl=en&entry=ttu&g_ep=EgoyMDI0MTIwOC4wIKXMDSoASAFQAw%3D%3D" 
               className="text-primary hover:underline"
               target="_blank"
               rel="noopener noreferrer"
             >
               Koh Phangan
             </a>{" "}
-            for 4 weeks (April 18 to May 18), transforming it into a vibrant coworking space for technical and remote professionals.
+            (April 18 to May 18).
           </p>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            Our goal is to create an inspiring environment where software engineers, startup founders, digital nomads, and artists can collaborate and build amazing things together.
+            This will be an informal coworking space to build and live a healthy lifestyle alongside others working on exciting projects. :)
           </p>
         </div>
         <div className="rounded-2xl overflow-hidden shadow-xl">
