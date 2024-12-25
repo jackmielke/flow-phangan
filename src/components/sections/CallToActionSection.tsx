@@ -14,7 +14,7 @@ const CallToActionSection = () => {
           className="bg-primary hover:bg-primary/90"
           onClick={() => window.open('https://airtable.com/appt8cQp1EPGsmmZy/pagDgPJfHw9UqHwAw/form', '_blank')}
         >
-          I'm Interested
+          I'm Interested :)
         </Button>
       </div>
     </section>

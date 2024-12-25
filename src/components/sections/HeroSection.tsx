@@ -24,7 +24,7 @@ const HeroSection = () => {
           className="bg-white text-black hover:bg-white/90 animate-fadeIn"
           onClick={() => window.open('https://airtable.com/appt8cQp1EPGsmmZy/pagDgPJfHw9UqHwAw/form', '_blank')}
         >
-          I'm Interested
+          I'm Interested :)
         </Button>
       </div>
     </section>
