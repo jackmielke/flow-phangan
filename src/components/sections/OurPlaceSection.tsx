@@ -2,7 +2,7 @@ import React from "react";
 
 const OurPlaceSection = () => {
   return (
-    <section className="py-20 bg-accent/20 -mx-4 px-4">
+    <section id="our-place-section" className="py-20 bg-accent/20 -mx-4 px-4">
       <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
         <div className="rounded-2xl overflow-hidden shadow-xl">
           <img 
