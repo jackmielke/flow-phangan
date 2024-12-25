@@ -10,8 +10,8 @@ const VisionSection = () => {
 
   return (
     <section className="py-20">
-      <div className="grid md:grid-cols-2 gap-12 items-center">
-        <div className="space-y-6">
+      <div className="max-w-6xl mx-auto space-y-12">
+        <div className="text-center space-y-6 max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold">The Vision</h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
             We've booked{" "}
@@ -36,12 +36,21 @@ const VisionSection = () => {
             This will be an informal coworking space to build and live a healthy lifestyle alongside others working on exciting projects. :)
           </p>
         </div>
-        <div className="rounded-2xl overflow-hidden shadow-xl">
-          <img 
-            src="/lovable-uploads/583e538c-89d9-4a37-b2b9-c9785a6053e0.png" 
-            alt="Villa Interior" 
-            className="w-full h-full object-cover"
-          />
+        <div className="grid md:grid-cols-2 gap-8">
+          <div className="rounded-2xl overflow-hidden shadow-xl">
+            <img 
+              src="/lovable-uploads/c9c2bdab-c64c-4495-930b-7986883ee272.png" 
+              alt="Coworking at Flow Phangan" 
+              className="w-full h-[400px] object-cover"
+            />
+          </div>
+          <div className="rounded-2xl overflow-hidden shadow-xl">
+            <img 
+              src="/lovable-uploads/583e538c-89d9-4a37-b2b9-c9785a6053e0.png" 
+              alt="Villa Interior" 
+              className="w-full h-[400px] object-cover"
+            />
+          </div>
         </div>
       </div>
     </section>
