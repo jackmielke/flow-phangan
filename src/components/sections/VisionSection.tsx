@@ -38,8 +38,8 @@ const VisionSection = () => {
         </div>
         <div className="rounded-2xl overflow-hidden shadow-xl">
           <img 
-            src="/lovable-uploads/c9c2bdab-c64c-4495-930b-7986883ee272.png" 
-            alt="Coworking at Flow Phangan" 
+            src="/lovable-uploads/583e538c-89d9-4a37-b2b9-c9785a6053e0.png" 
+            alt="Villa Interior" 
             className="w-full h-full object-cover"
           />
         </div>
