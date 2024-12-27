@@ -1,57 +1,36 @@
 import React from "react";
+import { Button } from "../ui/button";
 
 const VisionSection = () => {
   const scrollToOurPlace = () => {
-    const ourPlaceSection = document.getElementById('our-place-section');
-    if (ourPlaceSection) {
-      ourPlaceSection.scrollIntoView({ behavior: 'smooth' });
-    }
+    document.getElementById('our-place-section')?.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  const scrollToWhyKohPhangan = () => {
+    document.getElementById('why-koh-phangan')?.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
     <section className="py-20">
-      <div className="max-w-6xl mx-auto space-y-12">
-        <div className="text-center space-y-6 max-w-3xl mx-auto">
-          <h2 className="text-3xl font-bold">The Vision</h2>
-          <p className="text-lg text-muted-foreground leading-relaxed">
-            We've booked{" "}
-            <button 
-              onClick={scrollToOurPlace}
-              className="text-primary hover:underline focus:outline-none"
-            >
-              a villa
-            </button>{" "}
-            and are turning it into a month-long creative hub for technical and remote workers on{" "}
-            <a 
-              href="https://www.google.com/maps/place/Ko+Pha+Ngan/@9.7349598,99.9388031,35068m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3054fd96fa0377ef:0xd3fd8d1a5e79affe!8m2!3d9.7318753!4d100.0135929!16zL20vMDNtajBu?hl=en&entry=ttu&g_ep=EgoyMDI0MTIwOC4wIKXMDSoASAFQAw%3D%3D" 
-              className="text-primary hover:underline"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Koh Phangan
-            </a>{" "}
-            (April 18 to May 18).
-          </p>
-          <p className="text-lg text-muted-foreground leading-relaxed">
-            This will be an informal coworking space to build and live a healthy lifestyle alongside others working on exciting projects. :)
-          </p>
-        </div>
-        <div className="grid md:grid-cols-2 gap-8">
-          <div className="rounded-2xl overflow-hidden shadow-xl">
-            <img 
-              src="/lovable-uploads/c9c2bdab-c64c-4495-930b-7986883ee272.png" 
-              alt="Coworking at Flow Phangan" 
-              className="w-full h-[400px] object-cover"
-            />
-          </div>
-          <div className="rounded-2xl overflow-hidden shadow-xl">
-            <img 
-              src="/lovable-uploads/583e538c-89d9-4a37-b2b9-c9785a6053e0.png" 
-              alt="Villa Interior" 
-              className="w-full h-[400px] object-cover"
-            />
-          </div>
-        </div>
+      <div className="space-y-6 max-w-3xl mx-auto text-center">
+        <h2 className="text-3xl font-bold">Our Vision</h2>
+        <p className="text-lg text-muted-foreground leading-relaxed">
+          We're building a community of developers, founders, and creators on{" "}
+          <button 
+            onClick={scrollToWhyKohPhangan}
+            className="text-primary hover:underline focus:outline-none"
+          >
+            Koh Phangan
+          </button>
+          . Our goal is to create an environment where you can be productive while enjoying island life. We have{" "}
+          <button
+            onClick={scrollToOurPlace}
+            className="text-primary hover:underline focus:outline-none"
+          >
+            a villa
+          </button>{" "}
+          with fast internet and good vibes, surrounded by nature and close to the beach.
+        </p>
       </div>
     </section>
   );
