@@ -3,8 +3,15 @@ import { Palmtree, Coins, Smile, Waves, Wifi } from "lucide-react";
 
 const WhyKohPhanganSection = () => {
   return (
-    <section className="py-20">
-      <h2 className="text-3xl font-bold text-center mb-12">Why Koh Phangan?</h2>
+    <section id="why-koh-phangan" className="py-20">
+      <h2 className="text-3xl font-bold text-center mb-6">Why Koh Phangan?</h2>
+      <div className="w-full max-w-4xl mx-auto mb-12 rounded-2xl overflow-hidden shadow-xl">
+        <img 
+          src="/lovable-uploads/30036629-5901-48c0-b3ea-bf34c9689a0c.png" 
+          alt="Beautiful beach in Koh Phangan with turquoise water and traditional longtail boat"
+          className="w-full h-auto object-cover"
+        />
+      </div>
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {[
           {
