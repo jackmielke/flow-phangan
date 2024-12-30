@@ -14,7 +14,7 @@ const OurPlaceSection = () => {
         <div className="flex flex-col gap-6">
           <div className="rounded-2xl overflow-hidden shadow-xl">
             <img 
-              src="/lovable-uploads/villa/IMG_8458.jpg" 
+              src="/lovable-uploads/villa/IMG_8455.jpg" 
               alt="Flow Villa - Main View" 
               className="w-full aspect-[4/3] object-cover"
             />

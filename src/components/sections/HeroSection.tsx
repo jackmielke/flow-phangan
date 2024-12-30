@@ -5,11 +5,11 @@ import { CalendarDays } from "lucide-react";
 const HeroSection = () => {
   return (
     <section className="relative h-[90vh] flex items-center justify-center" style={{
-      backgroundImage: "url('/lovable-uploads/11d1a4b7-9054-421b-b8dc-d2c787dc34ab.png')",
+      backgroundImage: "url('/lovable-uploads/Pier Beach Sea.jpg')",
       backgroundSize: 'cover',
       backgroundPosition: 'center'
     }}>
-      <div className="absolute inset-0 bg-black/40" />
+      <div className="absolute inset-0 bg-black/25" />
       <div className="relative z-10 text-center text-white max-w-3xl mx-auto px-4">
         <div className="flex items-center justify-center gap-2 mb-2 animate-fadeIn">
           <CalendarDays className="w-4 h-4 opacity-80" />

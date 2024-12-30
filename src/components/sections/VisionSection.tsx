@@ -38,7 +38,7 @@ const VisionSection = () => {
           />
         </div>
         <p className="text-lg text-muted-foreground leading-relaxed">
-          Our goal is to create an environment where you can be productive while enjoying island life. We have a villa but will not be supplying lodging or food — simply a nice space with fast internet and good vibes, surrounded by nature and close to the beach.
+          Our goal is to create an environment where you can be as <i>productive, happy, and healthy</i> as possible while enjoying island life. We'll provide a nice space with fast internet and good vibes, surrounded by nature and close to the beach. [Lodging and food not included]
         </p>
         <div className="rounded-2xl overflow-hidden shadow-xl mt-6">
           <img 
