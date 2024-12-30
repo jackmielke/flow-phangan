@@ -6,9 +6,9 @@ const CommunitySection = () => {
       <div className="max-w-6xl mx-auto">
         <div className="grid md:grid-cols-2 gap-12">
           <div>
-            <h2 className="text-3xl font-bold mb-6">Join Our Community</h2>
+            <h2 className="text-3xl font-bold mb-6 text-center">Meet the Hosts</h2>
             <div className="space-y-6">
-              <p className="text-lg text-muted-foreground leading-relaxed">
+              <p className="text-lg text-muted-foreground leading-relaxed text-center">
                 We're two remote-working developers looking to gather like-minded builders:
               </p>
               <div className="space-y-4">
